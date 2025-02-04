@@ -1,0 +1,67 @@
+#entry {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+body {
+    display: flex;
+}
+
+#certificate {
+    display: flex;
+    justify-content: space-between;
+    width: 11in;
+    height: 8.5in;
+}
+
+#pillarImage {
+    width: 50px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+    #certificate {
+        display: none;
+    }
+}
