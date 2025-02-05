@@ -13,15 +13,46 @@ body {
     justify-content: space-between;
     width: 11in;
     height: 8.5in;
+    background-image: url(/images/pear.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
 }
 
 #pillarImage {
-    width: 50px;
-    height: 30px;
     object-fit: cover;
+    width: 50em;
+
 }
 
+#certificateContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
 
+#certifName {
+    text-align: center;
+    font-size: 60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#things{
+    display: flex;
+}
+
+@media print {
+    #entry {
+        display: none;
+    }
+}
+
+/* @media screen {
+    #certificate {
+
+    }
+} */
 
 
 
