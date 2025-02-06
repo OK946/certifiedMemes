@@ -11,8 +11,8 @@ body {
 #certificate {
     display: flex;
     justify-content: space-between;
-    width: 11in;
-    height: 8.5in;
+    width: 66em;
+    height: 51em;
     background-image: url(/images/pear.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,14 +21,34 @@ body {
 
 #pillarImage {
     object-fit: cover;
-    width: 50em;
-    height: 25em;
+    width: 45em;
+    height: 23.7em;
 }
 
 #certificateContent {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#giverInfo, #date{
+    width:14em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#giverInfo p {
+    margin: 0em;
+}
+
+#date {
+    margin-right: 1em;
+    text-align: end;
+}
+
+#giverInfo {
+    margin-left: 1em;
 }
 
 #certifName {
@@ -54,60 +74,38 @@ body {
 }
 
 hr {
-    margin: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    height: 61em;
+}
+
+#rectangleLeft{
+    margin-left: 2em;
+}
+
+#rectangleRight{
+    margin-right: 2em;
 }
 
 @media print {
-    #entry {
+    #entry, hr {
         display: none;
     }
-}
 
-/* @media screen {
     #certificate {
-
+        width: 12.1in;
+        height: 9.35in;
+        margin: 0;
+        padding:0;
+        background-image: url(/images/pear.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-self: center;
     }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media print {
-    #certificate {
+    
+    head {
         display: none;
     }
+
 }
