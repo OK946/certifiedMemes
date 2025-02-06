@@ -17,19 +17,18 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 0;
 }
 
 #pillarImage {
     object-fit: cover;
     width: 50em;
-
+    height: 25em;
 }
 
 #certificateContent {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
 }
 
 #certifName {
@@ -40,6 +39,22 @@ body {
 
 #things{
     display: flex;
+}
+
+#awardName {
+    text-align: center;
+    font-size: 100px;
+    margin: 0em;
+}
+
+#lower {
+    display: flex;
+    flex-direction: column;
+
+}
+
+hr {
+    margin: 2em;
 }
 
 @media print {
