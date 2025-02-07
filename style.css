@@ -13,16 +13,21 @@ body {
     justify-content: space-between;
     width: 66em;
     height: 51em;
-    background-image: url(/images/pear.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    z-index: 2;
+}
+
+#background {
+    position: absolute;
+    align-self: center;
+    margin-left: 22em;
+    z-index: -1;
+    width: 50em;
 }
 
 #pillarImage {
     object-fit: cover;
-    width: 45em;
-    height: 23.7em;
+    width: 38em;
+    height: 22em;
 }
 
 #certificateContent {
@@ -51,20 +56,40 @@ body {
     margin-left: 1em;
 }
 
+#description {
+    position: absolute;
+    right: 20em;
+    top: 10em;
+    transform: rotate(20deg);
+    font-family: "Philosopher", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 #certifName {
     text-align: center;
     font-size: 60px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
 }
 
-#things{
+#lowerObjects{
     display: flex;
+    font-size: 20px;
+    font-family: "Philosopher", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #awardName {
     text-align: center;
     font-size: 100px;
     margin: 0em;
+    font-family: "Philosopher", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #lower {
@@ -79,33 +104,29 @@ hr {
     height: 61em;
 }
 
-#rectangleLeft{
-    margin-left: 2em;
-}
-
-#rectangleRight{
-    margin-right: 2em;
-}
-
 @media print {
+    @page{size: landscape; margin: 0;}
+
     #entry, hr {
         display: none;
     }
 
     #certificate {
-        width: 12.1in;
-        height: 9.35in;
+        height: 816px;
+        width: 1056px;
         margin: 0;
         padding:0;
-        background-image: url(/images/pear.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        justify-self: center;
+        align-items: center;
     }
-    
+
     head {
         display: none;
+    }
+
+    #description {
+        right: 2em;
+        top: 10em;
+        transform: rotate(20deg);
     }
 
 }
